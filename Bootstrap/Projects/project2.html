@@ -1,0 +1,200 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    
+    <!--Bootstrap icon-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
+<style>
+
+    #top_nav{ background-color:#daac00; padding: 0% 8%;}
+    #ul_nav{ text-color: white; font-size: 20px; padding: 25px;}
+    #srch_nav{ background-color: #fcc302; color: white; border: 0px; border-radius: 0px; position: relative; left: 50px; box-shadow: 5px 10px 11px 0px #00000021;}
+    #btn_nav{ position: relative; z-index: 99; background-color: #00bec9; color: white; border: 0px; border-radius: 0px;}
+    #banner{ background-color: #fcc302;}
+    #banner h1 { color: white; font-size: 70px; margin-top: 100px;}
+    #banner p { color: white; font-size: 20px; margin-top: 30px; margin-bottom: 20px; }
+    #btn1_nav { background-color: #00bec9; border: 2px solid 00bec9; color: white; margin-left: 15px;} 
+    #btn2_nav { color: white; border: 2px solid white;  margin-left: 15px;} 
+    #btn_ser { color: white; background-color: #fcc302; border: 2px solid #fcc302;}
+    #counter { background-image: url(3.jpeg); padding-top: 50px; padding-bottom: 70px; background-position: center; background-size:cover;}
+    icon_counter { font-size: 70px;}
+    #blog { padding-top: 70px; padding-bottom: 70px; }
+    #blog h1 { font-size: 40px; font-weight: bolder;}
+    #blog p { font-size: 20px; margin-bottom: 70px;}
+    .article_detail { padding: 15px; }
+    .article { border:1px solid rgb(185,185,185); border-top: 0px;}
+    #footer { background-color: #343434; padding-top: 80px; padding-bottom: 80px;} 
+    #footer a { color: white; text-decoration: none;}
+    #footer h1 { display: inline;}
+</style>
+    <title> project using bootsrap and css </title>
+  </head>
+  <body>
+
+  <nav class="navbar navbar-expand-lg navbar-dark" id="top_nav">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#" > <img  class="img-fluid" src="logo.jpeg"  width="150px" > </a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-5 mb-lg-0  text-white" id="ul_nav">
+        <li class="nav-item">
+          <a class="nav-link" href="#"> HOME </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#"> ABOUT </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#"> SERVICES </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#"> CONTACT </a>
+        </li>
+      </ul>
+      <form class="d-flex">
+        <input class="form-control me-2" type="search" placeholder="Search..." aria-label="Search" id="srch_nav">
+        <button id="btn_nav" class="btn btn-outline-success" type="submit"> <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
+          <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
+        </svg> </button>
+      </form>
+    </div>
+  </div>
+</nav>
+
+<!--container-fluid-->
+
+<div class="container-fluid">
+  <div class="row justify-content-center" id="banner">
+    <div class="col-md-6 d-none d-md-block">
+      <h1 > First I wanted to be <br>
+        a veterinarian </h1>
+        <p>Lorem losum availdble but the maioritv have
+          suffered alteration in some form, by injected
+          _humour randomised words</p>
+          <button type="button" class="btn" id="btn1_nav"> Contact Us </button>
+          <button type="button" class="btn" id="btn2_nav"> Our Services </button>
+    </div>
+    <div class="col-md-4"> <img src="1.jpeg" alt="not found" class="img-fluid"> </div>
+  </div>
+
+</div>
+<!--container-fluid end-->
+
+<!--services-->
+<div class="row justify-content-center" id="services">
+  <div class="col-md-5 col-11 " style="padding-top:10%; padding-bottom: 5%;">
+    <h1> <b> As a veterinarian and <br>
+      lover of animals.</b> </h1>
+      <p> Lorem losum available but the majolv
+        suffered alteration in come form hi
+        numour randomised words </p>
+        <button type="button" class="btn" id="btn_ser"> Our Services </button>
+  </div>
+  <div class="col-md-5"> <img src="2.jpeg" alt="not found" class="img-fluid"  style="padding: 5%;"> </div>
+</div>
+<!--services end-->
+
+<div class="row justify-content-center" id="counter">
+  <div class="col-md-3 text-center text-white mt-5 mb-3"> 
+    <h1> <i class="bi bi-heart-half icon_counnter"></i> </h1>
+    <h3> ‡34793 <br>
+      Happy Clients</h3>
+</div>
+  <div class="col-md-3 text-center text-white mt-5 mb-3">
+   <h1> <i class="bi bi-building"></i> </h1>
+   <h3>  +45382 <br>
+    Departament </h3>
+  </div> 
+  <div class="col-md-3 text-center text-white mt-5 mb-3">
+    <h1> <i class="bi bi-eyedropper"></i> </h1>
+    <h3> +54762 <br>
+      Vaccinations</h3>
+  </div>
+</div>
+
+<!--blog-->
+<div class="row justify-content-center" id="blog">
+  <div class="col-12 text-center"> 
+    <h1> RECENT POST </h1>
+    <p> Lore Ipsum available, but the majority have <br>
+      suffered alteration in some form </p>
+   </div>
+   <div class="col-md-3"> 
+     <img src="4.jpeg" alt="not found"  class="img-fluid" >
+     <div class="article">
+    <h4 class="article_detail"> <b> As a veterinarian and <br>
+      lover of animals  </b> </h4>
+    <p class="article_detail" style="color: blue"> FEBRAURY 09,2022  </p>
+    <p class="article_detail"> Lore Ipsum available, but the majority have 
+      suffered alteration in some form </p>
+    <p class="article_detail" style="color: blue">  READ MORE <sup> + </sup></p>
+     </div>
+    </div>
+   <div class="col-md-3"> 
+     <img src="5.jpeg" alt="not found"  class="img-fluid" > 
+     <div class="article">
+     <h4 class="article_detail"> <b> As a veterinarian and <br>
+     lover of animals </b> </h4>
+   <p class="article_detail" style="color: blue"> FEBRAURY 10,2022  </p>
+   <p class="article_detail"> Lore Ipsum available, but the majority have
+     suffered alteration in some form </p>
+   <p class="article_detail" style="color: blue"> READ MORE <sup> + </sup></p>
+     </div>
+    </div>
+   <div class="col-md-3">
+      <img src="6.jpeg" alt="not found"  class="img-fluid" > 
+      <div class="article">
+      <h4 class="article_detail"> <b> As a veterinarian and 
+      lover of animals </b> </h4>
+    <p class="article_detail" style="color: blue"> FEBRAURY 11,2022  </p>
+    <p class="article_detail"> Lore Ipsum available, but the majority have
+      suffered alteration in some form </p>
+    <p class="article_detail"style="color: blue" > READ MORE <sup> + </sup></p>
+      </div>
+  </div>
+</div>
+
+<!--footer-->
+<div class="row justify-content-center text-white" id="footer">
+  <div class="col-md-3">
+    <h4> ABOUT </h4>
+    <a href="">  History </a> <br>
+    <a href=""> Our Team </a> <br>
+    <a href=""> Brand Guidelines </a> <br>
+    <a href=""> Terms and Condition </a> <br>
+    <a href=""> Privacy Poliecy </a> <br>
+  </div>
+  <div class="col-md-2">
+    <h4> Services </h4>
+    <a href="">  How To Order </a> <br>
+    <a href=""> Our Product </a> <br>
+    <a href=""> Order Status </a> <br>
+    <a href=""> Promo</a> <br>
+    <a href=""> Payment Method </a> <br>
+  </div>
+  <div class="col-md-4 text-end">
+    <h4> TITLE More</h4
+      <p> loremlosum available but the maiorit </p>
+      <form action="" style="margin-top: 10px; margin-bottom: 10px;" >
+        <input type="text" style="background-color: #fcc302; color: white; border: 0px; padding: 20px; width: 300px; position: relative; left: 10px;">
+        <button type="submit" style="background-color: #00bec2; color: white;  border: 0px; padding: 20px 30px;"> <i style="font-size:17px;" class="bi bi-cursor-fill"></i> </button>
+      </form>
+      <h1> <i class="bi bi-instagram"></i> </h1>
+      <h1> <i class="bi bi-facebook"></i> </h1>
+      <h1> <i class="bi bi-twitter"></i> </h1>
+     <h1> <i class="bi bi-whatsapp"></i> </h1>
+  </div>
+</div>
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+
+  </body>
+</html>
