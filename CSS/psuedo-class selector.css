@@ -1,0 +1,56 @@
+/* Psuedo Selector syntax. */
+/* syntax -> any_selector : psuedo_class; */
+/* :link : It select all the unvisited links. */
+a{
+    color: red;
+}
+
+a:link{
+    color: rgb(82, 215, 147);
+}
+
+/* :visited : selects all the visited links. */
+a:visited{
+    color: orange;
+}
+
+/* :hover -> adds styles when your mover your cursor over particular element. */
+a:hover{
+   color: red;
+}
+
+/* :active -> Selects all active links. */
+a:active{
+    color: black;
+}
+
+/* :focus -> used to select an element that is focus on(used with input tags only). */
+input:focus{
+   background-color: blue;
+}
+
+.btn{
+    border: 5px solid black;
+    border-radius: 10px;
+    padding: 10px 20px;
+    width: 20%;
+    font-size: 16px;
+    color: white;
+    background-color: lightblue;
+}
+
+.btn:hover{
+    background-color: red;
+    border: 5px solid greenyellow;
+    columns: greenyellow;
+}
+
+/* .container p:last-child{    //:first-child also used 
+    color: lightblue;
+} */
+
+.container p:nth-child(2n){   /*want to give alternative color. we have to specify the condition acc. to requirement. */
+    color: blue;
+}
+
+

@@ -1,0 +1,6 @@
+/* Attrubute Selector Syntax : selector[attribute_name="attribute_value"] */
+input[type="text"]{
+    border: 1px solid blue;
+    border-radius: 10px;
+    font-family: 'Courier New', Courier, monospace;
+}

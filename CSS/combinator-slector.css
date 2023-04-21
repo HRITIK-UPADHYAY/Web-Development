@@ -1,0 +1,29 @@
+/* Combination Selector */
+/* 1 -> General Sibling Selsector */
+
+/* h1 ~ p{
+    color: red;
+}
+
+.para ~ h1{
+   color: blue;
+} */
+
+/* 2 -> Adjacent Sibling Selectore  : targets the immediate after element of the main element */
+/* h1 + p{
+    color: green;
+} */
+
+/* #para +  .head{
+    color: gray
+} */
+
+/* 3 -> child Selector : target the direct chidrent of the main element. */
+/* div > p{
+    color: red;
+} */
+
+/* 4 -> Desendant Selector : target all the desendent of element. */
+div p{
+    color: red;
+}

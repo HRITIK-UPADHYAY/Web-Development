@@ -1,0 +1,19 @@
+/*psuedo-Elements : used to style specified parats of an Elements.*/
+/* syntax -> selector::psuedo-element{} */
+
+.para-1::first-line{
+    color: blueviolet;
+}
+
+.para-1::first-letter{
+    color: red;
+}
+
+.para-1::after{
+   content: "hey there is present  inside after pseudo-element";
+   color: red;
+}
+
+.para-1::before{
+    content: url(../Html/utils/Image/hr.webp);
+}
