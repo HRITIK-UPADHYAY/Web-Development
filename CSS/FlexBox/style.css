@@ -1,0 +1,23 @@
+.container{
+     background-color: lightblue;
+     height: 400px;
+     display: flex; 
+     /* flex-direction: row;   // By Default Direction.
+     flex-direction: row-reverse; //Reverse order from right side.
+     flex-direction: column;       //Align it as a column.
+     flex-direction: column-reverse;   //Reverse order from bottom side. */
+     
+     /* flex-wrap: nowrap; //By default. All the element in a sigle line.  
+     flex-wrap: wrap;    //If space is not availaible in a line then present into new line.
+     flex-wrap: wrap-reverse;   //reverse the elemnt order.  */
+}
+
+.container .item{
+     width: 20%;
+     background-color: blue;
+     font-size: 20px;
+     color: white;
+     padding: 20px;
+     border: 1px solid white;
+     margin: 2px;
+}

@@ -1,0 +1,78 @@
+<!DOCTYPE <!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Document</title>
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="style.css" />
+    <style>
+      .parent {
+        height: 200vh;
+        background-color: yellow;
+        color: black;
+        padding: 30px;
+      }
+      .child {
+        padding: 30px;
+      }
+      .child-one {
+        background-color: red;
+      }
+      .child-two {
+        background-color: green;
+      }
+      .child-three {
+        background-color: blue;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Positions In CSS</h1>
+    <ol>
+      <li>static : The original or default Position of an element.</li>
+
+      <li>
+        relative : Element is Positioned Relative to its normal/original
+        Position. Same as static positioning, just that here we can move are
+        elements by ading offset values. Element stays in norma document flow.
+      </li>
+
+      <li>
+        absolute : Element is positioned relative to its parent. if parent is
+        not present, the element is positioned relative to the main document.
+        Element is removed from the normal document flow, no space is created
+        for that element.
+      </li>
+
+      <li>
+        fixed : Element is positioned to the viewport, Element doest not moved
+        and stays in the same position even after scrolling. element is removed
+        from the normal flow.
+      </li>
+
+      <li>
+        sticky : Element is position according to the normal document flow till
+        the element htls the top it has normal position, after it touches the
+        top it becomes fixed.
+      </li>
+      
+    </ol>
+
+    <div class="parent">
+      paraent
+      <div class="child child-one">One</div>
+      <div class="child child-two">Two</div>
+      <div class="child child-three">Three</div>
+
+      <nav>This is nav- Bar</nav>
+      
+    </div>
+
+  </body>
+</html>

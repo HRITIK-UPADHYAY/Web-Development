@@ -1,0 +1,15 @@
+.para{
+    color: green;
+}
+
+p{
+    color: red;
+    color : blue;
+}
+
+/* Universal selector(*) : no specificity means 0 specificity. */
+/* tags and psuedo-element selector : they have specificity value 1. */
+/* class, psuedo-class, attribute selector : the have specificity value 10. */
+/* id selector : it has specificity value is 100. */
+/* Inline style attribute : that has a specificity value is 1000. */
+/* !important : it has specificity value is 10000. */

@@ -1,0 +1,22 @@
+div{
+    height: 100px;
+    width: 100px;
+    border: 1px solid black;
+}
+
+.container:nth-child(odd){
+    background-color: red;
+}
+
+.container:nth-child(odd):hover{
+    background-color: blue;
+}
+
+.container:nth-child(even){
+    background-color: blue;
+}
+
+.container:nth-child(even):hover{
+    background-color: red;
+}
+

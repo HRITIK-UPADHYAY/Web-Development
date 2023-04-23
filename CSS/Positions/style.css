@@ -1,0 +1,53 @@
+/* Position In CSS : Specifies the type of positioning you have provided to your element.
+Syntax -> selector {
+    position : value;
+}
+
+--> value is of many type in position.
+1. static : specify the element is in original position. It is by default value.
+
+2. relative :  Same as static positioning, just that here we can move are
+        elements by adding offset values. Element stays in norma document flow. 
+
+3. fixed :  Element is positioned relative to its parent.
+         if parent is not present, the element is positioned relative to the main document.
+         Element is removed from the normal document flow, no space is created  for that element.
+
+4. absolute :
+5. sticky : */
+
+
+.parent{
+    position: relative;
+}
+
+.child{
+    
+}
+
+.child-one{
+ position: relative;
+ top: 20px;
+ left: 20px;
+}
+
+.child-two{
+    position: absolute;
+    top: 20px;
+    
+}
+
+.child-three{
+    position: fixed;
+    top: 0px;
+    left: 0px;
+}
+
+nav{
+    position: sticky;
+    width: 100%;
+    top: 20px;
+    background-color: white;
+    padding: 30px;
+    text-align: center;
+}
