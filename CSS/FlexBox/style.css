@@ -2,6 +2,7 @@
      background-color: lightblue;
      height: 400px;
      display: flex; 
+
      /* flex-direction: row;   // By Default Direction.
      flex-direction: row-reverse; //Reverse order from right side.
      flex-direction: column;       //Align it as a column.
@@ -10,6 +11,44 @@
      /* flex-wrap: nowrap; //By default. All the element in a sigle line.  
      flex-wrap: wrap;    //If space is not availaible in a line then present into new line.
      flex-wrap: wrap-reverse;   //reverse the elemnt order.  */
+
+     /* flex-flow : shorthand for flex-direction and flex-wrap  */
+
+      flex-flow: row wrap; 
+
+      /* justify-content: is used to set the alignment in X-axis. */
+      /* Values for justify-content -> start, flexStart, end, center, space-between, space-evenly. */
+     justify-content: start;  /* //by defalult and it algin the content at the start.    */
+     justify-content: end;  /* //align the content at the end.*/
+     justify-content: center;    /* //align the content at the center.*/
+     justify-content: space-between;   /* //align the first element at the start and last element at the end and giving space b/w them.*/
+     justify-content: space-around;     /* //align the space around the element but the space b/w the first and start and last and end is less and in between has greate space.*/
+     justify-content: space-evenly;     /* //align the equally space around the element in X-axis.*/
+
+     /* align-items: align-item is used to arrange the element in Y-axis. 
+     It works only with single row, i.e flex-wrap: nowrap; */
+     /* values of align-items => stretch, flex-start, flex-end, center, baseline. */
+     align-items: stretch;        /* //By default value. align the content at the whole Y-axis.*/
+     align-items: flex-start;    /* // align the content at the top with respect to Y-axis.*/
+     align-items: flex-end;      /* //align the element at the bottow w.r.t Y-axis.*/
+     align-items: center;       /* //align the element at the centre w.r.t Y-axis.*/
+     align-items: baseline;       /* //align the content at the baseline. Content start at a specific baseline.*/
+
+     /* align-content: align-content is used to align the item w.r.t Y-axis.
+     It works only when you have multiple rows in a div and flex-wrap : wrap; */
+     /* Values for align-content -> stretch, flexStart, end, center, space-between, space-evenly. */
+     align-content: stretch;  /* //by defalult and it algin the content at the top.    */
+     align-content: flex-start;    /* // align the content at the top with respect to Y-axis.*/
+     align-content: end;  /* //align the content at the bottom.*/
+     align-content: center;    /* //align the content at the center.*/
+     align-content: space-between;   /* //align the first element at the top and last element at the bottom and giving space b/w them.*/
+     align-content: space-around;     /* //align the space around the element but the space b/w the first and top and last and bottom is less and in between has greate space.*/
+     align-content: space-evenly;     /* //align the equally space around the element in Y-axis.*/ 
+
+     /* gap: it is use to give gap b/w elements. */
+     row-gap: 20px;     /* leave the gap b/w row.*/
+     column-gap: 30px;   /*leave the gap b/w column. */
+     gap: 10px 5px;     /*shorthand for row-gap and column-gap first row-gap and then column-gap. */
 }
 
 .container .item{
