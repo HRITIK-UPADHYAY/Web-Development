@@ -1,0 +1,14 @@
+.container{
+    width: 100%;
+    background-color: lightblue;
+    display: grid;
+    grid-template-columns: repeat(4, 20%);
+    justify-item: content
+  }
+  
+  
+  .container .item{
+    color: white;
+    background-color: blue;
+    margin: 2px;
+  }

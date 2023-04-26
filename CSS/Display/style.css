@@ -1,0 +1,14 @@
+div{
+    display: inline-block; 
+    height: 200px;
+    width: 200px;
+}
+
+span{
+    display: block;
+    /* display: none;  //hiding the element and not taken any space. */
+    /* visibility: hidden;   //hiding the element but the space is taken by the element. */
+}
+/* width and height property not work with dispalay property inline. */
+/* width and height property work with dispalay property inline-block. */
+/* width and height property is work with dispaly property block. */

@@ -1,0 +1,28 @@
+.container{
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(3, 20%);
+    justify-content: center;
+    align-content: center;
+    font-family: 'Poppins', sans-serif;
+    gap: 10px;
+}
+
+.container .item{
+    border: 1px solid rgb(232, 232, 232);
+    border-radius: 5px;
+    box-shadow: rgba(28, 28, 28, 0.08) 0px 1.426263px 2.85246px;
+}
+
+.item h5{
+    font-size: 10px;
+    font-weight: 400;
+    color: rgb(28, 28, 28);
+    margin: 5px 10px;
+}
+
+.item p{
+    font-size: 8px;
+    color: rgb(54, 54, 54);
+    margin: 5px 11px;
+}
