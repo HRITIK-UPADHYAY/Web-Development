@@ -1,0 +1,53 @@
+body{
+    /* 1.2 em * 16px = 19.2px   */
+    /* font-size: 1.2em; */
+
+    /* 80/100 * 16px = 12.8px */
+    /* font-size: 80%; */
+
+    /* 1.4rem * 16px = 22.4px */
+    /* font-size: 1.4rem; */
+
+    width: ;
+}
+
+div{
+    width: 500px;
+    height: 500px;
+    color: black;
+    position: absolute;
+    /* 2em * 19.2px = 38.2px */
+    /* font-size: 2em; */
+
+    /* 90/100 * 12.8 = 11.52  */
+    /* font-size: 90%;*/
+     
+    /* 1.2rem * 16px = 19.2px; */
+    font-size: 1.2rem;
+
+    width: 100vw;
+}
+
+.red{
+    background-color:  red;
+    top: 20px;
+    left: 20px;
+}
+
+.green{
+    background-color:  green;
+    top: 40px;
+    left: 40px;
+}
+
+.blue{
+    background-color:  blue;
+    top: 60px;
+    left: 60px;
+}
+
+.yellow{
+    z-index: auto;
+    background-color:  yellow;
+
+/* position propert is must to use the z-index and but in position property static value is not work. */
