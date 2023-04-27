@@ -47,5 +47,5 @@ div{
 .yellow{
     z-index: auto;
     background-color:  yellow;
-
+}
 /* position propert is must to use the z-index and but in position property static value is not work. */

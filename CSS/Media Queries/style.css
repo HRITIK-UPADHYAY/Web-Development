@@ -1,0 +1,48 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+.container{
+    width: 100%;
+    display: flex;
+    color:  black;
+    border: 1px solid black;
+}
+
+.item{
+   width: 50%;
+   height: 50vh;
+   border: 1px solid black;
+   font-size: 40px;
+}
+
+/* smaller screen */
+@media screen and (min-width: 320px) and (max-width: 480px) {
+    .container{
+        flex-direction: column;
+        background-color: blue;
+        color: black;
+    }   
+}
+
+ /* tablets and larger phone */
+@media screen and (min-width: 481px) and (max-width: 768px){
+    .container{
+        flex-wrap:  wrap;
+        background-color: lightgreen;
+        color: Green;
+    }   
+
+    .item{
+        width: 20%;
+    }
+}
+
+/* laptops and larger tablets and desktop */
+@media screen and (min-width: 769px) and (max-width: 1279px) {
+    .container{
+        background-color: plum;
+        color: violet;
+    }
+}
