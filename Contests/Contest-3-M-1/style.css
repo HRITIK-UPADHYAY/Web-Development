@@ -1,0 +1,79 @@
+/* caraousel section  */
+.carousel-inner img{
+    height: 100vh;
+}
+
+.carousel-indicators [data-bs-target]{
+    background-color: transparent !important;
+}
+
+/* main section  */
+
+ /* section-1  */
+ .image-wrapper{
+    display: flex;
+ }
+
+ .image-wrapper img{
+    height: 30vh;
+ }
+
+
+ .col1 .img-fluid {
+   height: 70vh;
+ }
+ .col2 .img-fluid {
+   height: 33vh;
+}
+
+.col3 .img-fluid {
+   height: 33vh;
+   width: 100%;
+}
+
+.r2 img{
+   height: 60vh;
+   width: 100%;
+}
+
+.card{
+   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.btn:hover{
+   color: #0b5ed7 !important;
+   border: 1px solid #0b5ed7;
+   background-color: white !important;
+}
+
+/* footer section  */
+.footer{
+   background-color: aliceblue;
+   display: flex;
+   justify-content: center;
+   margin-top: 40px;
+}
+
+.links{
+  display: flex;
+  justify-content: space-between; 
+}
+
+.links > div{
+   margin-top: 20px;
+   margin-right: 150px;
+
+}
+
+.footer .copyright{
+   display: flex;
+   justify-content: space-between;
+   margin-top: 20px;
+}
+
+/* responsive design  */
+@media screen and (min-width: 320px) and (max-width: 768px) { 
+   .image-wrapper .container{
+      width: 100%;
+   }
+}
