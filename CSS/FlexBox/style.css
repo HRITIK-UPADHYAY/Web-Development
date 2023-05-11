@@ -51,7 +51,8 @@
      gap: 10px 5px;     /*shorthand for row-gap and column-gap first row-gap and then column-gap. */
 }
 
-.container .item{
+
+/* .container .item{
      width: 20%;
      background-color: blue;
      font-size: 20px;
@@ -59,4 +60,4 @@
      padding: 20px;
      border: 1px solid white;
      margin: 2px;
-}
+}  */
