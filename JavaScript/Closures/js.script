@@ -1,0 +1,15 @@
+let a = 20;
+function one(two, a){
+    let func = function(a){
+        two();
+    }
+
+    return func;
+}
+
+let x = function(){
+    console.log(a+3);
+}
+
+let result = one(x, a+2);
+result();
