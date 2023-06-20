@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JIRA Software DashBoard</title>
+
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:wght@400;900&family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Mulish:wght@400;500;600;700;800;900;1000&family=Open+Sans:wght@300&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;1,500&display=swap"
+      rel="stylesheet"
+    />
+
+    <style>
+        body{
+            font-family: 'Open Sans', sans-serif;
+            font-family: 'Poppins', sans-serif;
+        }
+    </style>
+
+    <link rel="stylesheet" href="style.css">
+
+  </head>
+  <body>
+
+    <section class="container">
+        <div class="box" id="TODO">
+            <div class="title-container"> 
+                <p class="title"> TO DO </p>
+                <span class="material-icons"> more_horiz </span>
+            </div>
+            <button id="create-issue">
+                <span class="material-icons"> add </span>
+                <span> create issue </span>
+            </button>
+        </div>
+        <div class="box" id="IN_PROGRESS">
+          <div class="title-container"> 
+            <p class="title"> In Progress </p>
+            <span class="material-icons"> more_horiz </span>
+           </div>
+        </div>
+        <div class="box" id="COMPLETED">
+          <div class="title-container"> 
+            <p class="title"> Completed </p>
+            <span class="material-icons"> more_horiz </span>
+          </div>
+        </div>
+    </section>
+
+    <script>
+        let activeDraggedElement = null;
+    </script>
+    <script src="script.js"></script>
+    <script src="draggable.js"></script>
+  </body>
+</html>
