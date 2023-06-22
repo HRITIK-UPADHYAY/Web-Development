@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        .skills-container{
+            box-shadow: 1px 1px 4px rgb(207, 207, 207);
+            padding: 10px;
+            display: flex;
+            gap: 5px;
+            flex-flow: row wrap;
+            align-items: center;
+        }
+
+        input{
+            border: none;
+            cursor: pointer;
+        }
+
+        input:focus {
+            outline: none;
+        }
+
+        .chip {
+            background-color: black;
+            height: 20px;
+            border-radius: 10px;
+            color: white;
+            padding: 0 10px;
+            cursor: pointer;
+        }
+
+        .parent {
+            background-color: yellow;
+            padding: 20px;
+        }
+
+        .child {
+            background-color: orange;
+            padding: 20px;
+        }
+
+    </style>
+    
+</head>
+<body>
+
+    <h1> Practice </h1>
+
+    <!-- <div id="container" class="skills-container">
+        <input type="text" placeholder="Enter The Skill">
+    </div> -->
+
+    <!-- <script>
+        const skillsContainer = document.getElementById("container");
+        const addedSkills = [];
+        const input = document.getElementsByTagName("input")[0];
+        input.addEventListener("keyup", (e) => {
+            const enteredValue = input.value.trim();
+            const key = e.key;
+            if(key == "Enter" && enteredValue){
+                const b = document.createElement("b");
+                b.className = "chip";
+                b.innerText = enteredValue;
+
+                addedSkills.push(enteredValue);
+                appendNewElementAtFront(b);
+
+                input.value = "";
+            }
+            
+            key == "Enter" && !enteredValue && (input.value = "")
+
+        })
+    
+        function appendNewElementAtFront(newElement) {
+            skillsContainer.innerHTML = ``;
+            
+            for(let i=0; i<addedSkills.length; i++){
+                const b = document.createElement("b");
+                b.className = "chip";
+                b.innerText = addedSkills[i];
+
+                b.addEventListener("click", removeElement);
+
+                skillsContainer.appendChild(b);
+            }
+
+            skillsContainer.appendChild(input);
+        }
+
+        function removeElement(e) {
+            const targetElement = e.target; // targetElement = <b class="chip"> java </b>.
+            const value = targetElement.innerText;  // value = java.
+            let index = addedSkills.indexOf(value);
+            addedSkills.splice(index, 1);
+            e.target.remove();
+        }
+    </script> -->
+
+    <div class="parent">
+        <div class="child"></div>
+    </div>
+
+    <script>
+        const parent = document.getElementsByClassName("parent")[0];
+        const child = document.getElementsByClassName("child")[0];
+
+        child.addEventListener("click", (e) => {
+            console.log("child element");
+            e.stopPropagation();
+        })
+
+        parent.addEventListener("click", (e) => {
+            console.log("parent element");
+        })
+    </script>
+
+
+
+    <!-- <script src="script.js"></script>  -->
+</body>
+</html>
