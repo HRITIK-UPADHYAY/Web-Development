@@ -1,0 +1,161 @@
+* {
+    top: 0;
+    left: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+/* Header Section  */
+header {
+    width: 100%;
+    height: 8rem;
+    background-color:#FFF5D6;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    box-shadow: rgb(38, 57, 77) 0rem 2rem 3rem -1rem; 
+    position: fixed;
+}
+
+header .heading {
+  flex-grow: 1;
+  text-align: center;
+  font-size: 7rem;
+}
+
+
+/* Main section  */
+.section-content {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+    border-radius: 2rem;
+    border: 0.08rem solid black;
+    margin-bottom: 2rem;
+    font-size: 2rem;
+    margin: 10.5rem 2rem;
+    background-color: #FFFAEB;
+    box-shadow: rgba(0, 0, 0, 0.19) 0rem 1rem 2rem, rgba(0, 0, 0, 0.23) 0rem 0.6rem 0.6rem;
+}
+
+.section-content .tech {
+    border: 0.02rem solid black;
+    width: 30%;
+    height: 42rem;
+    margin: 1.5rem;
+    border-radius: 1rem;
+    box-shadow: rgba(14, 30, 37, 0.12) 0rem 0.2rem 0.44rem 0rem, rgba(14, 30, 37, 0.32) 0rem 0.2rem 1.6rem 0rem;
+}
+
+.tech .techStackName {
+  text-align: center;
+  font-size: 2.5rem;
+  padding: 0.5rem;
+  box-shadow: rgba(0, 0, 0, 0.24) 0rem 0.3rem 0.8rem;
+}
+
+.tech ul li {
+    font-size: 1.5rem;
+    padding: 0.2rem;
+    margin-left: -1.5rem;
+}
+
+/* Responsive Design Styling  */
+@media (min-width: 1201px)  {
+    html {
+        font-size: 55%;
+    }
+}
+
+@media (min-width: 992px) and (max-width: 1200px) {
+    html {
+        font-size: 45%;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+   html {
+    font-size: 34%;
+   }
+}
+
+@media (min-width: 601px) and (max-width: 767px) {
+    html {
+        font-size: 35%;
+    }
+
+    .section-content .tech {
+        width: 45%;
+    }
+}
+
+@media (max-width: 600px) {
+
+    html {
+        font-size: 30%;
+    }
+
+    .section-content .tech {
+        width: 45%;
+    }
+
+    .tech ul li {
+        margin-left: -5rem;
+    }
+}
+
+ @media (max-width: 449px) {
+
+    html {
+        font-size: 35%;
+    }
+
+    .section-content .tech {
+        width: 100%;
+        height: 34rem;
+        margin: 1rem;
+        border: none;
+    }
+
+    .tech ul li {
+        margin-left: -5rem;
+    }
+}
+
+@media (max-width: 359px) {
+    html {
+        font-size: 25%;
+    }
+
+    .section-content .tech {
+        width: 100%;
+        height: 33.5rem;
+        margin: 1rem;
+        border: none;
+    }
+
+    .tech ul li {
+        margin-left: -5rem;
+    }
+}
+
+@media (max-width: 280px) {
+    html {
+        font-size: 15%;
+    }
+
+    .section-content .tech {
+        width: 100%;
+        height: 28rem;
+        margin: 1rem;
+        border: none;
+    }
+
+    .tech ul li {
+        margin-left: -5rem;
+    }
+}
