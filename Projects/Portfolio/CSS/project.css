@@ -11,7 +11,7 @@ html {
 /* Header section  */
 header {
     width: 100%;
-    height: 7rem;
+    height: 8rem;
     background-color: #FFF5D6;
     display: flex;
     justify-content: flex-end;
@@ -23,7 +23,7 @@ header {
 header .heading {
   flex-grow: 1;
   text-align: center;
-  font-size: 6rem;
+  font-size: 7rem;
 }
 
 header .github {
@@ -39,7 +39,7 @@ header .github {
     border: 0.08rem solid black;
     margin-bottom: 2rem;
     font-size: 2rem;
-    margin-top: 9rem;
+    margin-top: 10rem;
     margin-left: 2.5rem;
     background-color: #FFFAEB;
     box-shadow: rgba(0, 0, 0, 0.19) 0rem 1rem 2rem, rgba(0, 0, 0, 0.23) 0rem 0.6rem 0.6rem;
@@ -79,24 +79,38 @@ header .github {
     font-weight: 600;
     padding: 1rem;
     margin-bottom: 1.5rem;
-    font-size: 2.5rem;
+    font-size: 3rem;
     box-shadow: rgba(0, 0, 0, 0.4) 0rem 0.2rem 0.4rem, rgba(0, 0, 0, 0.3) 0rem 0.7rem 1.3rem -0.3rem, rgba(0, 0, 0, 0.2) 0rem -0.3rem 0rem inset; 
 }
 
-.project-name ul {
-    margin-top: 1rem;
-    margin-left: 2.5rem;
- }
+.project-name .bullet-points p::before {
+    content: "\2743"; /* Unicode value for bullet point */
+    color: black;
+    margin-right: 1rem;
+}
 
-.project-name .unset {
-   align-self: start;
- }
+.project-name .bullet-points {
+    align-self: self-start;
+    margin-left: 10rem;
+}
+
+.bullet-points p {
+    font-size: 2rem;
+    margin: 0.3rem;
+}
+
 
 
  /* Responsive Styling  */
-@media (min-width: 1201px) {
+@media (min-width: 2001px) {
     html {
-        font-size: 55%;
+        font-size: 85%;
+    }
+}
+
+@media (min-width: 1500px) and (max-width: 2000px) {
+    html {
+        font-size: 75%;
     }
 }
 
@@ -120,13 +134,25 @@ header .github {
 
 @media (max-width: 600px) {
     html {
-        font-size: 20%;
+        font-size: 25%;
+    }
+
+    .project-name span {
+        margin-top: 1.5rem;
+    }
+
+    .project-name legend, .link {
+        font-size: 1.3rem;
+    }
+
+    .project-name .bullet-points {
+        margin-left: 2rem;
     }
 }
 
-@media (max-width: 449px) {
+@media (max-width: 389px) {
     html {
-        font-size: 15%;
+        font-size: 23%;
     }
 
     .section-content {
@@ -137,16 +163,37 @@ header .github {
         border: none;
         box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
     }
+
+    .project-name legend {
+        font-size: 1rem;
+    }
+
+    .project-name .link {
+        font-size: 1rem;
+        margin-top: -3.2rem;
+    }
+
+    .project-name span {
+        margin-top: 1.5rem;
+    }
+
+    .project-name .bullet-points {
+        margin-left: 2rem;
+    }
 }
 
-@media (max-width: 359px) {
+@media (max-width: 319px) {
     html {
-        font-size: 15%;
+        font-size: 20%;
+    }
+
+    project-name .bullet-points {
+        margin-left: 2rem;
     }
 }
 
 @media (max-width: 280px) {
     html {
-        font-size: 10%;
+        font-size: 15%;
     }
 }
