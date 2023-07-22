@@ -1,0 +1,390 @@
+* {
+    left: 0;
+    top: 0;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+/*********** Header Section  **********/
+header .bigScreen img {
+    width: 144rem;
+    height: 8rem;
+}
+
+header .mobile {
+   display: none;
+} 
+
+/*********** Main Section  *************/
+
+/* Banner section */
+.banner {
+    width: 126.4rem;
+    height: 35.5rem;
+    margin-top: 5rem;
+    margin-left: 8.8rem;
+    border-radius: 3rem;
+}
+
+/* Search Section */
+.container {
+    margin-top: 2.3rem;
+    margin-left: 8.8rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.container .content {
+    font-size: 2.2rem;
+    font-weight: 600;
+    line-height: 3.3rem;
+    color: #252525;
+}
+
+.container .search {
+    display: flex;
+    width: 128rem;
+}
+
+.container .search input{
+    margin-top: 2.5rem;
+    width: 125rem;
+    height: 4.2rem;
+}
+
+.container .search img {
+    width: 5.5rem;
+    height: 4.2rem;
+    gap: 0.9rem;
+    margin-top: 2.4rem;
+    border-radius: 0rem, 0.2rem, 0.2rem, 0rem;
+}
+
+/* Recipe Seclector Section  */
+.recipeType {
+    width: 75rem;
+    height: 8.6rem;
+    display: flex;
+    margin-left: 8.8rem;
+    margin-top: 4rem;
+    gap: 2rem;
+}
+
+.recipeType .type {
+    width: 236rem;
+    height: 8.6rem;
+    border-radius: 1rem;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    align-content: center;
+    color: white;
+}
+
+.type .name {
+    font-size: 1.6rem;
+    line-height: 2rem;
+    font-weight: 500;
+}
+
+.recipeType .allRecipe {
+    background-color: #EAAA00;
+}
+
+.recipeType .veg {
+    background-color: #C4D600;
+}
+
+.recipeType .nonVeg {
+    background-color: #DC582A;
+}
+
+/* Recipe Filter and Images Section  */
+.recipesImages {
+    margin-top: 3rem;
+    margin-left: 8.8rem;
+    display: flex;
+}
+
+/* Filters By Rating Section  */
+.recipesImages .filters {
+    width: 28rem;
+    height: 21rem;
+}
+
+.recipesImages .filters .heading{
+    width: 6.7rem;
+    height: 3.3rem;
+    margin-top: 2rem;
+    margin-left: 1.5rem;
+    font-size: 2.2rem;
+    line-height: 3.3rem;
+    font-weight: 600;
+    color: #252525;
+}
+
+.recipesImages .filters .subHeading {
+    width: 5.9rem;
+    height: 2.7rem;
+    margin-top: 1.5rem;
+    margin-left: 1.2rem;
+    font-size: 1.8rem;
+    font-weight: 500;
+    line-height: 2.7rem;
+    color: #252525;
+}
+
+.recipesImages .filters .btn {
+    margin-left: -12rem;
+    margin-top: 1.5rem;
+}
+
+.recipesImages .filters .btn  .radio{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    margin-top: 1.5rem;
+}
+
+.btn .radio input {
+    width: 1.8rem;
+    height: 1.8rem;
+}
+
+.btn .radio  .second {
+    margin-left: -3.5rem;
+}
+
+.btn .radio label {
+    margin-left: 1rem;
+    font-size: 1.5rem;
+    line-height: 1.69rem;
+    font-weight: 400;
+    color: #252525;
+}
+
+/* Dynamically Images Fetch */
+.recipesImages .container {
+    width: 98rem;
+    margin-top: -1rem;
+    margin-left: 2rem;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.container .items {
+    width: 30.5rem;
+    height: 31.5rem;
+    border-radius: 1.6rem;
+    margin: 1rem;
+    border: 0.1px solid #0C1A4B;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Image part  */
+.items .image {
+    height: 20rem;
+    margin: 0.8rem;
+}
+
+.image img {
+    width: 100%;
+    height: 100%;
+    border-radius: 1.6rem;
+}
+
+/* Type Part  */
+.items .type {
+    width: 5rem;
+    height: 2.4rem;
+    font-size: 1rem;
+    line-height: 2.4rem;
+    color: #A1A1A1;
+    margin-left: 2rem;
+}
+
+/* Details Part  */
+.items .detail {
+    width: 26.1rem;
+    height: 5.9rem;
+    display: flex;
+    flex-direction: column;
+    margin-left: 2.2rem;
+}
+
+.detail .upper {
+    display: flex;
+    justify-content: space-between;
+}
+
+.upper .name {
+    width: 18rem;
+    height: 2.4rem;
+    font-size: 2rem;
+    line-height: 2.4rem;
+    font-weight: 700;
+    font-family: 'Inter', sans-serif;
+}
+
+.upper .rating {
+    display: flex;
+    justify-content: space-between;
+}
+
+.rating img {
+    width: 1.6rem;
+    height: 1.6rem;
+    gap: 0.5rem;
+}
+
+.rating p {
+    width: 1.9rem;
+    height: 1.5rem;
+    font-size: 1.2rem;
+    line-height: 1.45rem;
+    font-weight: 500;
+    margin-top: 0.2rem;
+    margin-left: 0.5rem;
+}
+
+.items .lower {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    align-content: center; 
+}
+
+.lower .minute {
+    width: 13.7rem;
+    height: 2.4rem;
+    font-size: 2rem;
+    line-height: 2.7rem;
+    font-weight: 600;
+    color: #DC582A;
+    font-family: 'Inter', sans-serif;
+}
+
+.lower .btn a img {
+    width: 2.2rem;
+    height: 2.2rem;
+    margin-left: 1rem;
+}
+
+
+/*********** Footer Section  ***********/
+
+footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    align-content: center;
+    font-family: ;
+}
+
+footer .container {
+    width: 130rem;
+    height: 24.6rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin-top: 10rem;
+}
+
+.container  .first {
+    width: 29rem;
+    height: 12rem;
+}
+
+.container .first > .image img, .fourth > .image img {
+    width: 9.6rem;
+    height: 4.6rem;
+}
+
+pre, p {
+    font-size: 1.6rem;
+    font-weight: 400;
+    line-height: 2.4rem;
+    text-align: justify;
+}
+
+.container .heading {
+    font-size: 2rem;
+    font-weight: 600;
+    line-height: 2.6rem;
+}
+
+
+/************* Responsive Designs  *************/
+@media (max-width: 768px) {
+    header .bigScreen {
+        display: none;
+    }
+
+    header .mobile {
+        display: block;
+        width: 65.7rem;
+        height: 8rem;
+    }
+
+    header .mobile .menu {
+        width: 2.6rem;
+        height: 2.6rem;
+        margin-top: 1.7rem;
+        margin-left: 2.9rem;
+    }
+
+    header .mobile .logo {
+        width: 9.6rem;
+        height: 4.6rem;
+        margin-top: 2.7rem;
+        margin-left: 5.9rem;
+    }
+
+    .banner {
+        width: 61.4rem;
+        height: 35.5rem;
+        margin-top: 8.8rem;
+        margin-left: 2.6rem;
+    }
+
+    .container .search input {
+        width: 115rem;
+        height: 4.2rem;
+    }
+
+    .recipesImages {
+        flex-direction: column;
+    }
+
+    .recipesImages .filters .heading {
+        display: none;
+    }
+
+    .recipesImages .filters .btn {
+        display: flex;
+        justify-content: space-around;
+        margin-left: -2rem;
+    }
+
+    .recipesImages .container {
+        margin-top: -10rem;
+        margin-left: 0;
+    }
+
+    footer .container .first .para {
+        width: 57.3rem;
+        height: 7.2rem;
+    }
+
+    footer .socialMedia, .container .second, .third, .fourth {
+        display: none;
+    }
+}
