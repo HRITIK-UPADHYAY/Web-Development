@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> CountDown Project </title>
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,500;0,600;0,700;0,800;1,500;1,600;1,700;1,800&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+</head>
+<body>
+
+    <div class="main">
+        <div class="start">
+            <h1> CountDown Timer </h1>
+            <h3> Select Time and Date Upto Which CountDown You Want To Start. </h3>
+
+            <div class="time">
+                <div>
+                    <input type="text" class="input" value="0"> <br>
+                    <label for=""> Date </label>
+                </div>
+                <div>
+                    <input type="text" class="input" value="0"> <br>
+                    <label for=""> Month(in Eng) </label>
+                </div>
+                <div>
+                    <input type="text" class="input" value="0"> <br>
+                    <label for=""> Year </label>
+                </div>
+                <div>
+                    <input type="text" class="input" value="0"> <br>
+                    <label for=""> Hours </label>
+                </div>
+                <div>
+                    <input type="text" class="input" value="0"> <br>
+                    <label for=""> Minutes </label>
+                </div>
+                <div>
+                    <Select> 
+                        <option value="AM"> AM </option>
+                        <option value="PM"> PM </option>
+                    </Select>
+                    <label for=""> AM/PM</label>
+                </div>
+            </div>
+
+            <button id="start"> Start </button>
+        </div>
+
+        <div class="overlay">
+            <div class="title"> We Are Coming Soon </div>
+
+            <div class="time" id="endDate"> 20 March 2023 10:00 PM </div>
+
+            <div class="column">
+                <div>
+                    <input type="text" class="output" readonly value="0"> <br>
+                    <label for=""> Days </label>
+                </div>
+                <div>
+                    <input type="text" class="output" readonly value="0"> <br>
+                    <label for=""> Hours </label>
+                </div>
+                <div>
+                    <input type="text" class="output" readonly value="0"> <br>
+                    <label for=""> Minutes </label>
+                </div>
+                <div>
+                    <input type="text" class="output" readonly value="0"> <br>
+                    <label for=""> Seconds </label>
+                </div>
+            </div>
+
+            <button id="reset"> Reset </button>
+        </div>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
