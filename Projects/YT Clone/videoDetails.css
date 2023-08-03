@@ -1,0 +1,73 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: white;
+}
+
+body {
+    background-color: black;
+}
+
+#video {
+    height: 40vh;
+    border: 2px solid red;
+}
+
+.statistics {
+    border: 0.3px solid #AAA;
+    border-left: none;
+    border-right: none;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.statistics > .left {
+    color: #AAA;
+}
+
+.statistics > .right {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+
+.statistics > .right > div {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.channel-container {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid #AAA;
+    padding: 10px;
+}
+
+.channel-container > .left img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;  
+}
+
+.channel-container > .left {
+    display: flex;
+    align-items: flex-start;
+    gap: 20px;
+}
+
+.channel-container > .left > div {
+    display: flex;
+    flex-direction: column;
+}
+
+.channel-container > .right {
+    align-self: center;
+    padding: 5px 10px;
+    background-color: #CC0000;
+    border: none;
+    cursor: pointer;
+}
