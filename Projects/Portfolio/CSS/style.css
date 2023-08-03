@@ -72,7 +72,7 @@ html{
     background-color: rgb(208, 197, 183);
     height: 4rem;
     width: 8.0rem;
-    border-radius: 5.0rem;
+    border-radius: 5em;
     text-align: center;
     padding-top: 0.5rem;
     transition: transform 1s ease-in-out;
