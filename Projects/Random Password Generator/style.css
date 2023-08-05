@@ -1,0 +1,61 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: rgba(0, 0, 139, 0.508);
+    color: white;
+    text-align: center;
+}
+
+h1 {
+    margin: 5rem;
+    font-size: 4rem;
+    border-bottom: 2px solid white;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    width: 20rem;
+    background-color: rgba(0, 0, 139, 0.508);
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+
+.upper {
+    width: 90%;
+    height: 2.5rem;
+    margin: auto;
+    margin-top: 10px;
+    border-radius: 5px;
+    color: black;
+    background-color: white;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+    padding: 2px;
+    font-size: 2rem;
+}
+
+.middle .usage{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 1rem;
+}
+
+.lower button{
+    width: 90%;
+    height: 2.5rem;
+    margin: auto;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    color: white;
+    background-color: black;
+    font-size: 1.5rem;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+}
