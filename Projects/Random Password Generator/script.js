@@ -15,6 +15,7 @@ const getRandomData = (dataset) => {
 }
 
 const generatePassword = (psd = "")  => {
+    //upper.checked is checking the if checkbox is ticked or not.
     if(upper.checked)  psd += getRandomData(upperSet);
     if(lower.checked) psd += getRandomData(lowerSet);
     if(number.checked) psd += getRandomData(numberSet);
