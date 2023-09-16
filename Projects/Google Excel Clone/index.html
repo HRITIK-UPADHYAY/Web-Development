@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Google Excel Clone </title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+<body>
+
+    <header>
+        <div class="container">
+            <div class="left">
+                <img src="Excel Sheet.png" alt=""> 
+                <div class="inner-container">
+                    <div class="upper">
+                        <p> Untitled SpreadSheet </p>
+                        <div class="star"> <span class="material-icons"> star </span> </div>
+                        <div class="download"> <span onclick="downloadMatrix()" class="material-icons hover">  download </span> </div> 
+                        <div class="upload"> <span class="material-icons hover"> upload_file </span> </div>
+                    </div>
+
+                    <div class="lower">
+                        <div> <span> File </span> </div>
+                        <div> <span> Edit </span> </div>
+                        <div> <span> View </span> </div>
+                        <div> <span> Insert </span> </div>
+                        <div> <span> Format </span> </div>
+                        <div> <span> Data </span> </div>
+                        <div> <span> Tools </span> </div>
+                        <div> <span> Extensions </span> </div>
+                        <div> <span> Help </span> </div>
+                    </div>
+                </div>
+            </div>
+            <div class="right">
+                <div> <span class="material-icons hover"> history </span> </div> 
+                <div> <span class="material-icons hover"> comment </span>  </div>
+                <div id="share-btn"> 
+                    <span class="material-icons">lock  </span>
+                     <span> Share </span>
+                </div>
+                <div class="img"> <span id="img"> HR </span> </div>
+            </div>
+        </div>
+
+        <div class="table-top-cont">
+            <div id="bold-btn"> <span> B </span> </div>
+            <div id="italic-btn"> <span> I </span> </div>
+            <div id="underline-btn"> <span> U </span> </div>
+            <div id="left-btn"> <span class="material-icons"> format_align_left </span> </div>
+            <div id="center-btn"> <span class="material-icons"> format_align_center </span> </div>
+            <div id="right-btn"> <span class="material-icons"> format_align_right </span> </div>
+    
+            <select name="" id="font-style-dropdown">
+                <option value="serif"> Serif </option>
+                <option value="sans-serif"> Sans Serif </option>
+                <option value="monospace"> MonoSpace </option>
+                <option value="cursive"> Cursive </option>
+            </select>
+    
+            <select name="" id="font-size-dropdown">
+                <option value="10px"> 10 </option>
+                <option value="12px"> 12 </option>
+                <option value="14px"> 14 </option>
+                <option value="16px"> 16 </option>
+                <option value="18px"> 18 </option>
+                <option value="18px"> 20 </option>
+            </select>
+    
+            <label class="hover" for="bgColor">
+                <span class="material-icons"> format_color_fill  </span> 
+            </label>
+            <input type="color" id="bgColor">
+    
+            <label class="hover" for="fontColor"> 
+                <span class="material-icons"> format_color_text  </span> 
+            </label>
+            <input type="color" id="fontColor">
+    
+            <div> <span  id="cut-btn" class="material-icons hover"> content_cut </span> </div>
+            <div> <span id="copy-btn" class="material-icons hover"> content_copy </span> </div>
+            <div> <span id="paste-btn" class="material-icons hover"> content_paste </span> </div>
+
+            <input type="file" accept=".json" id="upload-input"></input>
+        </div>
+
+    </header>
+
+    <main>
+        <div class="show-cell">
+            <h1 id="current-cell">  </h1>
+            <span> fx </span>
+            <input type="text">
+        </div>
+
+        <div class="table-container">
+            <table id="my-table">
+                <thead>
+                    <tr id="table-heading">
+                        <th class="sno blank-sno"></th>
+                         <!-- <th> A </th>
+                        <th> B </th>
+                        <th> C </th> -->
+                    </tr>
+                </thead>
+        
+                <tbody id="table-body">
+                    <tr>
+                        <th class="sno"> 1 </th>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <div class="sheets">
+            <div> <span id="add-sheet-btn" class="material-icons"> add </span> </div>
+            <div id="btn-container">
+                <button id="sheet-1" onclick="viewSheet(event)"> Sheet1 </button>
+            </div>
+        </div>
+
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
+<!-- #edf2fa-->

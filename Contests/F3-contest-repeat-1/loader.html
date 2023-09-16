@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Spinning Loader</title>
+  <style>
+    /* Styling for the loader container */
+    .loader-container {
+      display: none; /* Hide the loader by default */
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent background */
+      z-index: 9999; /* Ensure it's above other elements */
+    }
+
+    /* Styling for the loader itself */
+    .loader {
+      border: 4px solid #f3f3f3;
+      border-top: 4px solid #3498db;
+      border-radius: 50%;
+      width: 40px;
+      height: 40px;
+      animation: spin 2s linear infinite;
+    }
+
+    /* Keyframes animation for spinning */
+    @keyframes spin {
+      0% { transform: rotate(0deg); }
+      100% { transform: rotate(360deg); }
+    }
+  </style>
+</head>
+<body>
+  <!-- Loader container -->
+  <div class="loader-container" id="loaderContainer">
+    <div class="loader"></div>
+  </div>
+
+  <!-- Button to show/hide the loader -->
+  <button onclick="toggleLoader()">Toggle Loader</button>
+
+  <script>
+    // Function to toggle the visibility of the loader container
+    function toggleLoader() {
+      const loaderContainer = document.getElementById('loaderContainer');
+      loaderContainer.style.display = loaderContainer.style.display === 'none' ? 'flex' : 'none';
+    }
+  </script>
+</body>
+</html>
