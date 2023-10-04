@@ -42,19 +42,36 @@
 }
 
 .address {
-    border: 1px solid red;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
     background-color: #575A85;
     width: 40%;
+    margin-top: 5rem;
 }
 
-.address span {
-    font-size: 36px;
+.address .ipAd {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5rem;
+    gap: 0.2rem;
     line-height: 33px;
     font-family: 'Inter', sans-serif;
     font-weight: 400;
+    color: #B8BCCC;
+}
+
+.ipAd #ipAddress {
+    color: white;
+}
+
+#btn {
+    font-size: 1.5rem;
+    margin: 2rem;
+    padding: 0.5rem 4.5rem;
+    background-color: #575A85;
+    border: 2px solid #B8BCCC;
     color: #B8BCCC;
 }

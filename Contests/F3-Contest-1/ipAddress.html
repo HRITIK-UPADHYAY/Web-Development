@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="ipAddress.css">
+</head>
+<body>
+
+    <main>
+        <section id="details">
+            <div class="ip">
+                <span> IP Address : </span>
+                <span id="ipAddress"> 127.0.01 </span>
+            </div>
+
+            <div class="location">
+
+                <div>
+                    <div id="lat"> lat: </div>
+                    <div id="long"> long: </div>
+                </div>
+
+                <div>
+                    <div id="city"> city: </div>
+                    <div id="region"> Region: </div>
+                </div>
+
+                <div>
+                    <div id="organisation"> organisation: </div>
+                    <div id="hostname"> Hostname: </div>
+                </div>
+
+            </div>
+        </section>
+
+        <section id="currentLocation">
+            <h1> Your Current Location </h1>
+            <iframe id="map" src="https://maps.google.com/maps?q=35.856737, 10.606619&z=15&output=embed" frameborder="0" style="border:0"></iframe>
+        </section>
+
+        <section id="moreInfo">
+            <h2> More Information About You </h2>
+
+            <div>
+                <span id="timeZone"> Time Zone : </span>
+                <span id="dateNdTime"> Date And Time : </span>
+                <span id="pincode"> Pincode : </span>
+                <span id="message"> Message : </span>
+            </div>
+
+        </section>
+
+        <section id="postOffices">
+            <h2> Post Offices Near You </h2>
+
+            <input type="search" placeholder="Search By Name Or Branch Office" id="searchInput">
+
+            <div id="postOfficeContainer">
+                <!-- <div id="container">
+                    <div id="name"> Name  Hritik </div>
+                    <div id="branchType"> Branch Type </div>
+                    <div id="delivery"> DeliveryStatus </div>
+                    <div id="district"> District </div>
+                    <div id="division"> Division </div>
+                </div> -->
+            </div>
+        </section>
+        
+    </main>
+    
+
+    <script src="script.js"></script>
+</body>
+</html>
