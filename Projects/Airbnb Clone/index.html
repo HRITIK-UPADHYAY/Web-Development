@@ -15,10 +15,10 @@
         <!-- Search bar, listings, and map will go here -->
         <div id="search-bar">
             <div class="inputs"> 
-                <input id="destination" type="text" placeholder="Search Destination...">
-                <input id="check-in"  type="text" placeholder="Check In...">
-                <input id="check-out" type="text" placeholder="Check Out...">
-                <input id="adults" type="text" placeholder="No Of People...">
+                <input id="destination" class="search-input" type="text" placeholder="Search Destination...">
+                <input id="check-in" class="search-input"  type="date" placeholder="Check In...">
+                <input id="check-out" class="search-input"  type="date" placeholder="Check Out...">
+                <input id="adults" class="search-input"  type="text" placeholder="No Of People...">
             </div>
            
             <button id="search-button">Search</button>
@@ -27,6 +27,39 @@
         <div class="home-image">
             <img src="./Images/Big Card.png" alt="">
         </div>
+
+
+        <div id="hotelLists">
+
+            <div id="hotels">
+                <!-- Listings will be appended here -->
+                <!-- <div id="listings-container">
+                    <img src="${listing.image}" alt="${listing.title}">
+                    <div class="listing-info">
+                        <div class="name">
+                            <p> Entire Home in ${}</p>
+                            <h2>${listing.title}</h2>
+                        </div>
+
+                        <div class="room-info">
+                            <p>${listing.propertyType} · beds · bathrooms</p>
+                        </div>
+                    
+                        <div class="priceNdRatings">
+                            <p>5.0</p>
+                            <p>${} (Reviews)</p>
+                            <p class="price"> 325/night </p>
+                        </div>
+                    </div>
+                    <button> Show Booking Cost Breakdown </button>
+                </div> -->    
+            </div>
+
+            <iframe id="map" src="https://maps.google.com/maps?q=35.856737, 10.606619&z=15&output=embed" frameborder="0" style="border:0"></iframe>
+
+        </div>
+
+        
     </main>
 
     <footer>
