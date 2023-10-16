@@ -1,0 +1,14 @@
+{
+  "files": {
+    "main.css": "/Web-Development/tree/main/react.github.io/portfoliobyreact/static/css/main.4460024e.css",
+    "main.js": "/Web-Development/tree/main/react.github.io/portfoliobyreact/static/js/main.6f0a7de4.js",
+    "static/media/HRITIK UPADHYAY.png": "/Web-Development/tree/main/react.github.io/portfoliobyreact/static/media/HRITIK UPADHYAY.de7d3ebdb5d4280fff33.png",
+    "index.html": "/Web-Development/tree/main/react.github.io/portfoliobyreact/index.html",
+    "main.4460024e.css.map": "/Web-Development/tree/main/react.github.io/portfoliobyreact/static/css/main.4460024e.css.map",
+    "main.6f0a7de4.js.map": "/Web-Development/tree/main/react.github.io/portfoliobyreact/static/js/main.6f0a7de4.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.4460024e.css",
+    "static/js/main.6f0a7de4.js"
+  ]
+}
