@@ -1,0 +1,19 @@
+.navbar {
+    display: flex;
+    gap: 2rem;
+    margin: 1rem;
+    padding: 1rem;
+    border-radius: 1rem;
+    background-color: black;
+}
+
+.navbar > a {
+    color:  white;
+    text-decoration: none;
+    font-size: 2rem;
+}
+
+.navbar > .active {
+    color: red;
+    font-weight: bold;
+}
